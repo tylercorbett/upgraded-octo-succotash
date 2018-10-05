@@ -1,16 +1,25 @@
 function handleSubmit(event) {
     var form = event.target;
     var elements =  form.elements;
-    
-    var name = elements.name.value;
-    console.log('name', name);
 
-    var comments = elements.comments.value;
-    console.log('comments', comments);
+   var guess = elements.guess.value;
 
-    var toppings = elements.comments.value;
-    console.log('toppings', toppings);
+   var correctAnswer = 5;
 
-    var grade = elements.grade.value;
-    console.log('grade', grade);
+   console.log('guess', guess);
+
+   var result = document.getElementById('result')
+
+   
+    if (guess == correctAnswer) {
+        result.textContent = 'That is correct!'
+    }
+    else if (guess < correctAnswer ) {
+        result.textContent = 'Your guess is too low!'
+    }
+    else {
+        result.textContent = 'Your guess is too high!'
+    }
+
+
 }
