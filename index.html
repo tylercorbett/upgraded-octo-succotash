@@ -9,32 +9,36 @@
 </head>
 <body>
     <h1>Apps FTW!</h1>
+    <form onsubmit="return handleSubmit(event), false;">
 
-    <p>
-        <input type="name" type="text">
-    </p>
-    <p>
-        <input name="toppings" type="checkbox"> Grapes
-        <input name="toppings" type="checkbox"> Pineapple
-        <input name="toppings" type="checkbox"> Tomatoes
-    </p>
-    <p>
-       <label> <input name="grade" type="radio"> A </label>
-       <label> <input name="grade" type="radio"> B </label>
-       <label> <input name="grade" type="radio"> C </label>
-    </p>
+        <p>
+            <label>
+                Comments: <input name="name" type="text">
+            </label>
+        </p>
 
-    <p>
-        <label>
-            <input name="toppings" type="checkbox"> 
-        </label>    
+        <p>
+            <label> <input name="toppings" type="checkbox"> Grapes </label>
+            <label> <input name="toppings" type="checkbox"> Pineapple </label>
+            <label> <input name="toppings" type="checkbox"> Tomatoes </label>
+        </p>
 
-    </p>
+        <p>
+            <label> <input name="grade" type="radio"> A </label>
+            <label> <input name="grade" type="radio"> B </label>
+            <label> <input name="grade" type="radio"> C </label>
+        </p>
 
+        <p>
+            <label>
+                <input name="toppings" type="checkbox"> 
+            </label>    
 
+        </p>
 
+        <button>Submit</button>
 
-    <button onclick="sayHello()">Click me!</button>
+    </form>
     <script src="index.js"></script>
 </body>
 </html>
